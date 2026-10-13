@@ -409,3 +409,103 @@ BRAND DEATHS, and the middle one is the exact failure mode of the target band:
    percentage (likely paid-source only: Cadent, NielsenIQ, Numerator, Circana). The Channable PMax
    ROAS study (five HTTP 429s). UPS 2026 GRI and USPS rate percentages. The 2026
    accounting-standard question.
+
+---
+
+# Supplement: Amazon fee mechanics and advertising load (2026-10-13)
+
+Second pass of the hard-economics research. No previously reported figure changed; the following
+is new material.
+
+## The corridor problem. The best FP&A argument in the research, and it is now on the deck.
+
+Nova Analytics' framing. The aged-inventory penalty threshold tightened to **181 days** (from 365)
+while the low-inventory-level penalty bites **below 28 days of cover**. The optimal inventory band
+narrowed from both ends in the same year. Compounding it, the low-inventory-level fee has been
+measured **per FNSKU since 2026-01-15** (previously per parent ASIN), which materially increases
+exposure for any brand with variants.
+
+A brand must now land inside a window it cannot see without per-SKU, per-FNSKU days-of-cover
+forecasting. **That states a product requirement as an external constraint rather than a benefit
+claim**, which is why it replaced the take-rate line as trigger 4's opener on the deck.
+
+Apparel, footwear, bags, jewelry and watches are excluded from the 181-270 day bands.
+
+## Amazon storage fees. A resolved conflict and a live event.
+
+- Current off-peak standard rate is **$0.87/cu ft, not $0.78**. Nova Analytics (2026-07-03, citing
+  a Seller Central schedule revision dated 2026-05-29) reports a mid-year increase effective
+  2026-07-01; SmartScout's historical card confirms $0.78 was the 2024/H1-2026 rate. Publish $0.87
+  as current and footnote $0.78.
+- DO NOT PUBLISH the "$0.76 / $2.10" prior-rate figures from that same Nova piece. They reconcile
+  with nothing else.
+- DERIVED headline: standard-size storage goes from **$0.87 to $2.40/cu ft on 1 October**, a 2.8x
+  step-change in the quarter a brand holds the most inventory (oversize $0.56 to $1.40). All
+  sources agree on the peak rates. As of today this is live, not forthcoming.
+- The aged-inventory surcharge threshold tightened from 365 to 181 days, and the 12-15 month
+  per-unit rate doubled in 2026 from $0.15 to $0.30.
+- Assessment is a snapshot on the **15th of each month**, so a removal order submitted by the 14th
+  avoids that month's charge. Tactically useful for outreach timing.
+
+## Amazon take rate. Use this formulation.
+
+Fee-only take is **27-38% of revenue** for a standard-size FBA SKU (three independent sources
+converge). Approximately **30% measured against 3P GMV** from Amazon's audited filings.
+**39-59% all-in** once advertising is loaded, and the all-in figure is driven **by price point
+more than by category**. That last clause is the useful part and it is the opposite of how most
+people talk about this.
+
+The deck previously said "about 38% once FBA, referral fees, returns and ads net out," which
+conflated the top of the fee-only range with the all-in figure. **Corrected on the deck.**
+
+Standing guidance: the widely-quoted "over 50%" is Marketplace Pulse's undisclosed-sample P&L
+estimate from 2023, not a 2026 measurement.
+
+On the 2026 fee increase, three arguably-true numbers spanning 0.5% to 10%: Amazon's own $0.08
+headline, Amazon's own $0.51 price-band detail, and amzprep (a 3PL, so an interested party,
+ESTIMATED) saying "most sellers are paying 8-10% more, not 0.5%". That spread is itself a pitch.
+
+## Jungle Scout, State of the Amazon Seller 2025. MEASURED, disclosed sample.
+
+n approx 1,500 sellers, 20+ countries, fielded 2025-01-10 to 2025-01-27.
+https://www.junglescout.com/resources/reports/amazon-seller-report-2025/
+- Top challenges: **38% higher shipping costs, 34% rising cost of goods, 32% growing advertising
+  expenses**
+- Roughly 40% of enterprise brands worried about profitability from inflated expenses
+- Better evidence than anything in the earlier cost-pressure section, because the sample is
+  disclosed.
+- UNVERIFIED: the seller profit-margin distribution (13% not profitable, 57% above 10% margin, 28%
+  at 20%+) came only via secondary renderings and was NOT on the page fetched. Do not publish.
+
+## Advertising load by category. ESTIMATED, no disclosed sample. Directional only.
+
+Weaker than the Marketplace Pulse cohort data (n=181) in the main report. Label clearly.
+
+ACoS by category (BrandGrowthIQ, mature ASINs, compiled from Jungle Scout/Helium 10/Perpetua):
+Electronics & Computers 8-18% | Sports & Outdoors 15-25% | Health & Personal Care 15-28% | Pet
+Supplies 18-30% | Home & Kitchen 20-32% | Beauty & Personal Care 20-35% | Toys & Games 20-35% |
+Vitamins & Supplements 22-40% | Grocery & Gourmet 25-45% | **Clothing, Shoes & Jewelry 30-50%,
+stated reason "Return rates inflate costs"**. Platform average per Jungle Scout 2025: 22-30% ACoS.
+
+TACoS by category, 7-figure sellers (Sequence Commerce, self-labelled editorial estimates):
+Electronics/Accessories 7-11% | Sports & Outdoors 9-13% | Home & Kitchen 10-15% |
+Supplements/Health 12-18% | Beauty & Personal Care 14-20%.
+
+CPC and conversion (Sequence Commerce, agency managing $15M+ Amazon ad spend, no sample
+disclosed): platform 2026 ACoS ~32%, CPC $1.18-$1.22, CVR 10-12%, TACoS 10-15%, with Health &
+Wellness the worst cell at CPC $2.50-$2.90 and implied ACoS ~40%.
+
+**Cross-reference worth more than either source alone:** the apparel ACoS range (30-50%) and its
+stated cause (returns) lines up with the EightX finding that fashion CM3 is only 10-20% because
+"returns destroy 20-30% of revenue". Two independent sources reaching the same conclusion about
+apparel from different directions.
+
+## Still thin
+
+Returns-by-category, slotting fees and inventory carrying cost. The 200-call WebSearch budget was
+exhausted roughly a third of the way through this agent's work.
+
+Full fee tables, worked per-unit take-rate examples and a 15-company public comp set are in the
+raw agent output at
+~/.claude/projects/-Users-gordondonnelly/ab86df24-1c44-4b26-aa83-76bdcbb6ce7d/tool-results/
+(toolu_0158muWcZZGsPamTbK4RzpaT.txt and toolu_018dSX9vaXmfTfJ4buRc5b7f.txt).
