@@ -7,7 +7,7 @@
 <title>Iris Finance · First 90 Days</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Fragment+Mono&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&family=Fragment+Mono&display=swap">
 <style>
 :root{
   --bg:#fbfcfd; --surface:#f5f4fd; --card:#ffffff;
@@ -16,6 +16,7 @@
   --accent:#5d2eea; --accent-2:#4208e5; --lilac:#c2befe; --lilac-2:#e7e0fd;
   --good:#0f9d58; --bad:#d6336c;
   --sans:'Inter',-apple-system,Segoe UI,Helvetica,Arial,sans-serif;
+  --display:'Outfit','Inter',-apple-system,Segoe UI,Helvetica,Arial,sans-serif;
   --mono:'Fragment Mono',ui-monospace,Menlo,monospace;
 }
 *{box-sizing:border-box}
@@ -23,7 +24,8 @@ html,body{margin:0;padding:0}
 body{background:var(--bg);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}
 .wrap{max-width:1080px;margin:0 auto;padding:28px 28px 120px}
 .bar{display:flex;align-items:center;gap:16px;padding-bottom:4px}
-.brand{font-family:var(--mono);font-size:13px;letter-spacing:.28em;text-transform:uppercase}
+.brand{display:block;height:21px;width:auto;mix-blend-mode:multiply}
+.brand-lg{display:block;height:58px;width:auto;align-self:flex-start;object-fit:contain;mix-blend-mode:multiply}
 .div{width:1px;height:18px;background:var(--line)}
 .tag{font-family:var(--mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--accent)}
 .count{margin-left:auto;font-family:var(--mono);font-size:10px;letter-spacing:.18em;color:var(--faint)}
@@ -31,9 +33,9 @@ body{background:var(--bg);color:var(--ink);font-family:var(--sans);-webkit-font-
 .slide.on{display:block}
 @keyframes in{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
 .kick{font-family:var(--mono);font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--accent);margin-top:40px}
-h1{font-size:60px;line-height:1.03;letter-spacing:-.025em;font-weight:800;margin:18px 0 0}
-h2{font-size:38px;line-height:1.1;letter-spacing:-.02em;font-weight:800;margin:10px 0 0}
-h3{font-size:16px;font-weight:700;margin:0}
+h1{font-family:var(--display);font-size:60px;line-height:1.04;letter-spacing:-.018em;font-weight:700;margin:18px 0 0}
+h2{font-family:var(--display);font-size:38px;line-height:1.12;letter-spacing:-.014em;font-weight:700;margin:10px 0 0}
+h3{font-family:var(--display);font-size:16px;font-weight:600;margin:0}
 .lede{font-size:16px;line-height:1.6;color:var(--muted);max-width:760px;margin:16px 0 0}
 .em{color:var(--accent)}
 .rule{height:3px;width:120px;border-radius:3px;margin-top:18px;background:linear-gradient(90deg,var(--accent),var(--lilac))}
@@ -68,7 +70,7 @@ li b{color:var(--ink)}
 <body>
 <div class="wrap">
   <div class="bar">
-    <span class="brand">Iris Finance</span>
+    <img class="brand" src="iris-logo.jpg" alt="Iris Finance" width="450" height="190">
     <span class="div"></span>
     <span class="tag">First 90 Days</span>
     <span class="count" id="count">01 / 14</span>
@@ -77,6 +79,7 @@ li b{color:var(--ink)}
   <!-- 1 COVER -->
   <section class="slide on">
     <div style="min-height:58vh;display:flex;flex-direction:column;justify-content:center">
+      <img class="brand-lg" src="iris-logo.jpg" alt="Iris Finance" width="450" height="190" style="margin-bottom:26px">
       <div class="tag" style="margin-bottom:22px">Head of Growth · Prepared for Zach &amp; Drew</div>
       <h1>The first <span class="em">90 days</span>,<br>and what they produce.</h1>
       <p class="lede" style="font-size:18px">Every channel, what it contributes, what it costs, and the number I would own at the end of the quarter. Built on your $30k ACV and on three weeks of your own data.</p>
