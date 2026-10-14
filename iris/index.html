@@ -86,7 +86,72 @@ li b{color:var(--ink)}
     </div>
   </section>
 
-  <!-- 2 WHAT I FOUND -->
+  <!-- 2 THE ICP -->
+  <section class="slide">
+    <div class="kick">Who this is for</div>
+    <h2>Every campaign, page and post runs through <span class="em">one of these rows</span>.</h2>
+    <div class="rule"></div>
+    <p class="lede">The job description says multichannel consumer brands. That is a market, not an ICP. This is the ICP, in Fletch&rsquo;s shape: the company, the person, the trigger, and who we deliberately do not sell to. Nothing later in this deck gets built unless it points at a row on this page.</p>
+    <table>
+      <tr><th>Company level</th><th>What qualifies</th><th>Why the pain is acute there</th></tr>
+      <tr><td>Size</td><td>US consumer brand, $5M to $150M revenue</td><td>Big enough that channel mix is real, small enough that nobody has built the reporting layer</td></tr>
+      <tr><td>Channel shape</td><td>Two or more channels with different fee structures. Shopify plus Amazon is the core; retail is the fastest-moving</td><td>One channel means one P&amp;L and a spreadsheet works. The second channel is what breaks it, because the fees do not net out the same way</td></tr>
+      <tr><td>What they sell</td><td>Physical goods, carrying inventory, landed cost and returns</td><td>This is the line between Iris and every SaaS-shaped FP&amp;A tool. Landed cost, returns and marketplace fees are the objects they do not model</td></tr>
+      <tr><td>Finance function</td><td>One to three people. Often no dedicated FP&amp;A at all</td><td>The work is being done by hand by someone whose job is something else</td></tr>
+      <tr><td>Stack</td><td>Shopify, Seller Central, QuickBooks or NetSuite, a 3PL, and a spreadsheet holding it together</td><td>The spreadsheet is the real competitor, not Drivetrain</td></tr>
+      <tr><td>Size of the room</td><td>Roughly 3,000 to 4,000 US companies, about 12,000 reachable people</td><td>Small enough to name every account, which is why outbound runs on triggers and not on volume</td></tr>
+    </table>
+    <table>
+      <tr><th>Person level</th><th>Who it actually is</th><th>Their part in the deal</th></tr>
+      <tr><td>Economic buyer</td><td>Founder or CEO below $20M. CFO or VP Finance above it</td><td>Signs. Below $20M there is no committee, which is why that segment closes in under 30 days</td></tr>
+      <tr><td>Champion</td><td>Controller or Director of FP&amp;A</td><td>Feels it monthly, has no competing vendor loyalty, and builds the deck the CFO presents</td></tr>
+      <tr><td>Blocker</td><td>Whoever owns security review</td><td>SOC 2, and the disclosure that customer accounting data is processed by OpenAI</td></tr>
+      <tr><td>Influencer</td><td>Head of Ops, and Growth or the CMO</td><td>Ops owns the PO decision the data feeds; Growth owns the channel the data indicts</td></tr>
+      <tr><td>Mandate</td><td>Operating partner at a PE or VC firm</td><td>Not a user. Can instruct a portfolio to standardise, which is the only route that skips the proof problem</td></tr>
+    </table>
+    <div class="note warn"><b>Who we do not sell to, and saying it out loud is the point.</b> Under $5M: a named consumer GP calls sub-$10M revenue &ldquo;extremely high risk&rdquo; and the median consumer seed round is about $700k, the lowest in six years, so there is neither budget nor runway. SaaS and digital businesses: no landed cost, no returns, no marketplace fees, which is exactly why Drivetrain, Cube and Abacum fit them and should keep them. And brands already running a staffed FP&amp;A team on an instrumented NetSuite, who have solved this and will tell you so on the call.</div>
+    <div class="note"><b>The positioning consequence, and it decides every asset we build.</b> Fletch splits positioning three ways: win a category buyers already know, sell into a category buyers do not know exists, or create your own. Iris is firmly the second. &ldquo;Contribution margin software&rdquo; has no search volume at all, while &ldquo;contribution margin&rdquo; runs 13,000 a month at difficulty 7. So nothing anchors on the category name. Every page, ad and email anchors on the job: show me what each channel actually nets after Amazon takes its cut.</div>
+  </section>
+
+  <!-- 3 SEGMENTS -->
+  <section class="slide">
+    <div class="kick">Who we are selling to</div>
+    <h2>Three segments. The move upmarket makes <span class="em">segment two</span> primary.</h2>
+    <div class="rule"></div>
+    <p class="lede">All net-new investment points at two and three. Segment one stays alive on content and inbound because it converts in under 30 days and it is where the current $5M came from, but it is not where the jump from $5M to $15M comes from.</p>
+    <table>
+      <tr><th></th><th>1 · Founder-led</th><th>2 · Finance-led</th><th>3 · Sponsor-backed</th></tr>
+      <tr><td>Revenue</td><td>$5M–$20M</td><td>$20M–$150M</td><td>Any, inside the band</td></tr>
+      <tr><td>Economic buyer</td><td>Founder or CEO</td><td>CFO or VP Finance</td><td>Portfolio ops partner, then the CFO</td></tr>
+      <tr><td>Champion</td><td>Nobody. It is the founder</td><td>Controller or Director of FP&amp;A</td><td>Operating partner at the firm</td></tr>
+      <tr><td>ACV</td><td>$15–25k</td><td>$40–75k</td><td>$50k+ with portfolio pricing</td></tr>
+      <tr><td>Cycle</td><td>14–30 days</td><td>60–120 days</td><td>Months at the firm, fast once mandated</td></tr>
+      <tr><td>Proof needed</td><td>One peer brand</td><td>References, SOC 2, migration plan</td><td>Sponsor endorsement carries it</td></tr>
+      <tr><td>Share of plan</td><td>~30% of logos</td><td>~50% of logos</td><td>~20%, highest ARR per logo</td></tr>
+    </table>
+    <div class="note warn"><b>The blocker in segment two and three.</b> Both need SOC 2, and you have none. The privacy policy says ISO 27001 and SOC 2 are "in process." It also discloses that customer accounting data is processed by OpenAI. For a product ingesting bank credentials and full financials, selling into private equity, that surfaces in security review after the deal is emotionally won. It is the most expensive thing on this page and it is not a marketing fix.</div>
+  </section>
+
+  <!-- 4 WHY THEY BUY -->
+  <section class="slide">
+    <div class="kick">The messaging matrix</div>
+    <h2>Same product. Six different <span class="em">first sentences</span>.</h2>
+    <div class="rule"></div>
+    <p class="lede">This feeds sequence copy, ad creative and the demo split. If everyone hears the same opening line, most of them hear a line written for somebody else.</p>
+    <table>
+      <tr><th>Persona</th><th>The core pain</th><th>What they buy</th><th>The opening line</th></tr>
+      <tr><td>Founder / CEO</td><td>Revenue is up and the bank balance is not, and nobody can say why</td><td>Revelation</td><td>Brands your size run about 31% contribution margin once Amazon fees and returns net out. Most model 45%</td></tr>
+      <tr><td>CFO / VP Finance</td><td>A nine-day close, and board questions they cannot answer with confidence</td><td>Time and credibility</td><td>How many days is your close, and how many are someone rebuilding the channel P&amp;L by hand</td></tr>
+      <tr><td>Controller / FP&amp;A</td><td>Rebuilding the same spreadsheet monthly, and it breaks the week a channel is added</td><td>Their week back</td><td>You will stop rebuilding the same model every month</td></tr>
+      <tr><td>Head of Ops</td><td>Committing cash to POs without knowing which SKUs make money after landed cost and returns</td><td>Cash clarity</td><td>Which SKUs are still profitable after landed cost and returns</td></tr>
+      <tr><td>Growth / CMO</td><td>MER looks healthy, so they keep scaling channels that are underwater</td><td>Channel truth</td><td>Your MER looks fine and three of your channels are losing money</td></tr>
+      <tr><td>Sponsor / operating partner</td><td>Every portfolio company reports differently, so reviews are spent reconciling</td><td>Comparability</td><td>You cannot compare your portfolio because every company reports differently</td></tr>
+    </table>
+    <div class="note warn"><b>One message works on every persona here, and only this quarter.</b> Six public consumer brands posted large gross-margin expansion in 2026, and in every case most of it was a one-time IEEPA tariff refund rather than operations. YETI up 890 basis points, 780 of it the refund and 110 operational. e.l.f. up about 1,400, its own filing attributing roughly 1,050 to refunds. Honest reported 800 with 340 underneath it. Warby Parker&rsquo;s refund was worth 500 basis points against a total improvement of 490, so the refund was the entire gain and then some. Private brands claimed too, from $10M at Learning Resources down to about $15k at LobsterBoys, whose founder said they were &ldquo;just filling back up a reserve that got drained.&rdquo; Nobody gets a second one. Every brand in the band is about to lap a quarter that cash flattered, in front of a board, and cannot currently separate the part of the margin that was real. All six figures are from filings and earnings releases.</div>
+    <div class="note"><b>The Controller is the most under-used entry point you have.</b> They feel it daily, have no competing vendor loyalty, and build the deck the CFO presents. I would open there in segment two rather than going straight at the CFO, then add the CFO two weeks later referencing that conversation.</div>
+  </section>
+
+  <!-- 5 WHAT I FOUND -->
   <section class="slide">
     <div class="kick">Before the plan</div>
     <h2>Six things I found that <span class="em">change where I'd start</span>.</h2>
@@ -104,7 +169,7 @@ li b{color:var(--ink)}
     <div class="note"><b>The reframe.</b> The information layer of your category is written by a competitor and a services firm, and your own best proof (500 brands, $20B GMV, 97% retention, your actual pricing) is buried in one blog post. A large share of the highest-return work in month one is making what already exists visible, not building new channels.</div>
   </section>
 
-  <!-- 3 THE GAP -->
+  <!-- 6 THE GAP -->
   <section class="slide">
     <div class="kick">Where the business is</div>
     <h2>You reach <span class="em">~$8.5M</span> without me. The target is $15M.</h2>
@@ -119,7 +184,7 @@ li b{color:var(--ink)}
     <div class="note"><b>Two numbers would rewrite this whole deck.</b> Actual NRR, and how many new logos you close in a month right now. Everything above is my estimate from public data. Both are week-one answers and I would rebuild the model on them before spending a dollar.</div>
   </section>
 
-  <!-- 4 THE NUMBER -->
+  <!-- 7 THE NUMBER -->
   <section class="slide">
     <div class="kick">The demand gen engine</div>
     <h2>In 90 days I am measured on <span class="em">qualified pipeline</span>, not closed ARR.</h2>
@@ -139,45 +204,7 @@ li b{color:var(--ink)}
     </div>
   </section>
 
-  <!-- 5 ICP -->
-  <section class="slide">
-    <div class="kick">Who we are selling to</div>
-    <h2>Three segments. The move upmarket makes <span class="em">segment two</span> primary.</h2>
-    <div class="rule"></div>
-    <p class="lede">All net-new investment points at two and three. Segment one stays alive on content and inbound because it converts in under 30 days and it is where the current $5M came from, but it is not where the next $9M comes from.</p>
-    <table>
-      <tr><th></th><th>1 · Founder-led</th><th>2 · Finance-led</th><th>3 · Sponsor-backed</th></tr>
-      <tr><td>Revenue</td><td>$5M–$20M</td><td>$20M–$150M</td><td>Any, inside the band</td></tr>
-      <tr><td>Economic buyer</td><td>Founder or CEO</td><td>CFO or VP Finance</td><td>Portfolio ops partner, then the CFO</td></tr>
-      <tr><td>Champion</td><td>Nobody. It is the founder</td><td>Controller or Director of FP&amp;A</td><td>Operating partner at the firm</td></tr>
-      <tr><td>ACV</td><td>$15–25k</td><td>$40–75k</td><td>$50k+ with portfolio pricing</td></tr>
-      <tr><td>Cycle</td><td>14–30 days</td><td>60–120 days</td><td>Months at the firm, fast once mandated</td></tr>
-      <tr><td>Proof needed</td><td>One peer brand</td><td>References, SOC 2, migration plan</td><td>Sponsor endorsement carries it</td></tr>
-      <tr><td>Share of plan</td><td>~30% of logos</td><td>~50% of logos</td><td>~20%, highest ARR per logo</td></tr>
-    </table>
-    <div class="note warn"><b>The blocker in segment two and three.</b> Both need SOC 2, and you have none. The privacy policy says ISO 27001 and SOC 2 are "in process." It also discloses that customer accounting data is processed by OpenAI. For a product ingesting bank credentials and full financials, selling into private equity, that surfaces in security review after the deal is emotionally won. It is the most expensive thing on this page and it is not a marketing fix.</div>
-  </section>
-
-  <!-- 6 WHY THEY BUY -->
-  <section class="slide">
-    <div class="kick">The messaging matrix</div>
-    <h2>Same product. Six different <span class="em">first sentences</span>.</h2>
-    <div class="rule"></div>
-    <p class="lede">This feeds sequence copy, ad creative and the demo split. If everyone hears the same opening line, most of them hear a line written for somebody else.</p>
-    <table>
-      <tr><th>Persona</th><th>The core pain</th><th>What they buy</th><th>The opening line</th></tr>
-      <tr><td>Founder / CEO</td><td>Revenue is up and the bank balance is not, and nobody can say why</td><td>Revelation</td><td>Brands your size run about 31% contribution margin once Amazon fees and returns net out. Most model 45%</td></tr>
-      <tr><td>CFO / VP Finance</td><td>A nine-day close, and board questions they cannot answer with confidence</td><td>Time and credibility</td><td>How many days is your close, and how many are someone rebuilding the channel P&amp;L by hand</td></tr>
-      <tr><td>Controller / FP&amp;A</td><td>Rebuilding the same spreadsheet monthly, and it breaks the week a channel is added</td><td>Their week back</td><td>You will stop rebuilding the same model every month</td></tr>
-      <tr><td>Head of Ops</td><td>Committing cash to POs without knowing which SKUs make money after landed cost and returns</td><td>Cash clarity</td><td>Which SKUs are still profitable after landed cost and returns</td></tr>
-      <tr><td>Growth / CMO</td><td>MER looks healthy, so they keep scaling channels that are underwater</td><td>Channel truth</td><td>Your MER looks fine and three of your channels are losing money</td></tr>
-      <tr><td>Sponsor / operating partner</td><td>Every portfolio company reports differently, so reviews are spent reconciling</td><td>Comparability</td><td>You cannot compare your portfolio because every company reports differently</td></tr>
-    </table>
-    <div class="note warn"><b>One message works on every persona here, and only this quarter.</b> Six public consumer brands posted large gross-margin expansion in 2026, and in every case most of it was a one-time IEEPA tariff refund rather than operations. YETI up 890 basis points, 780 of it the refund and 110 operational. e.l.f. up about 1,400, its own filing attributing roughly 1,050 to refunds. Honest reported 800 with 340 underneath it. Warby Parker&rsquo;s refund was worth 500 basis points against a total improvement of 490, so the refund was the entire gain and then some. Private brands claimed too, from $10M at Learning Resources down to about $15k at LobsterBoys, whose founder said they were &ldquo;just filling back up a reserve that got drained.&rdquo; Nobody gets a second one. Every brand in the band is about to lap a quarter that cash flattered, in front of a board, and cannot currently separate the part of the margin that was real. All six figures are from filings and earnings releases.</div>
-    <div class="note"><b>The Controller is the most under-used entry point you have.</b> They feel it daily, have no competing vendor loyalty, and build the deck the CFO presents. I would open there in segment two rather than going straight at the CFO, then add the CFO two weeks later referencing that conversation.</div>
-  </section>
-
-  <!-- 7 OUTBOUND -->
+  <!-- 8 OUTBOUND -->
   <section class="slide">
     <div class="kick">Channel 1 · 40% of pipeline · ~$12k tooling per quarter</div>
     <h2>Run by <span class="em">trigger</span>, never by persona.</h2>
@@ -196,7 +223,7 @@ li b{color:var(--ink)}
     <div class="note"><b>The ceiling nobody has named.</b> US consumer brands at $5M–$150M on Shopify plus Amazon is maybe 3,000 to 4,000 companies, roughly 12,000 reachable people. Touching 5,000 net-new contacts a month exhausts the market in under three months and burns it. The real model is ~2,900 a month, many of them re-engagements on a new signal. That caps outbound near 90 to 120 logos a year regardless of budget, which is exactly why content and partnerships have to carry what they carry.</div>
   </section>
 
-  <!-- 8 PAID -->
+  <!-- 9 PAID -->
   <section class="slide">
     <div class="kick">Channel 3 · 20% of pipeline · $22k across the quarter</div>
     <h2>Buy <span class="em">conversion</span>, not reach.</h2>
@@ -215,7 +242,7 @@ li b{color:var(--ink)}
     <div class="note warn"><b>On newsletter and podcast sponsorships, which the role description names: I looked, and I would not buy any.</b> There is no channel that reaches consumer-brand finance leaders. The CPG media has the right companies and the wrong function. Startup CPG, DTC Newsletter, 2PM, Operators all publish founder-heavy audiences and not one of them publishes a finance share. The finance media has the right function and the wrong companies. CFO Dive is 100% of the Fortune 100, and a 26-podcast FP&amp;A roundup contains zero consumer shows. Pavilion has no finance group at all. At $5M–$150M the founder usually is the finance buyer, so the founder channels are the better buy despite being wrong on paper. But convening the missing room costs less than renting someone else's, which is why the dinner budget is real and the sponsorship budget is zero.</div>
   </section>
 
-  <!-- 9 CONTENT -->
+  <!-- 10 CONTENT -->
   <section class="slide">
     <div class="kick">Channel 2 · 25% of pipeline · ~$16k/quarter contractors</div>
     <h2>You do not have a distribution problem. You have a <span class="em">conversion</span> problem.</h2>
@@ -236,7 +263,7 @@ li b{color:var(--ink)}
     <div class="note warn"><b>Three things in the founder layer are switched off, and all three cost nothing to switch back on.</b> Finance Operators, the podcast Drew hosts and Iris sponsors inside the 9operators network, has 12 episodes and a 5.0 rating from 21 listeners, and has not published since 18 July 2025. Making Cents is inverted: the evergreen frameworks sit behind the paywall while the deal-reaction posts, which are worthless in a week, are free. And "2025 M&amp;A Wrapped" covers 200+ transactions with no byline on it, as do all eight free resources. The CEO is the asset and his name is not attached to the work. Restarting that podcast comes before buying a single sponsorship anywhere.</div>
   </section>
 
-  <!-- 10 PARTNERSHIPS -->
+  <!-- 11 PARTNERSHIPS -->
   <section class="slide">
     <div class="kick">Channel 4 · 15% of pipeline · ~$8k/quarter</div>
     <h2>Starts week one, pays in <span class="em">Q2</span>.</h2>
@@ -251,7 +278,7 @@ li b{color:var(--ink)}
     <div class="note"><b>Dinners, not booths.</b> Eight to twelve operators around a table in a city where the list is dense, $2–4k all in. Existing customers do the selling and an investor in the room makes it feel worth attending. A booth's cost per lead scales linearly with spend, and this plan cannot afford linear.</div>
   </section>
 
-  <!-- 11 THE 13 WEEKS -->
+  <!-- 12 THE 13 WEEKS -->
   <section class="slide">
     <div class="kick">The sequence</div>
     <h2>Instrument and arm. Motions live. <span class="em">Compound</span>.</h2>
@@ -272,7 +299,7 @@ li b{color:var(--ink)}
     </div>
   </section>
 
-  <!-- 12 WHAT SHIPS -->
+  <!-- 13 WHAT SHIPS -->
   <section class="slide">
     <div class="kick">The output</div>
     <h2>What physically <span class="em">exists</span> at day 60.</h2>
@@ -321,7 +348,7 @@ li b{color:var(--ink)}
     </div>
   </section>
 
-  <!-- 13 METRICS -->
+  <!-- 14 METRICS -->
   <section class="slide">
     <div class="kick">How you would judge me</div>
     <h2>Day 30 on whether it exists. Day 90 on <span class="em">output</span>.</h2>
@@ -340,7 +367,7 @@ li b{color:var(--ink)}
     <div class="note"><b>The leading indicators I would watch weekly</b>, because pipeline tells me I was wrong six weeks late: reply rate by signal, meeting held rate, time from reply to meeting booked, demo to close by segment, and cost per qualified meeting by channel. One page every Monday. If a report does not change what someone does on Tuesday, it should not exist.</div>
   </section>
 
-  <!-- 14 WHAT I NEED -->
+  <!-- 15 WHAT I NEED -->
   <section class="slide">
     <div class="kick">To make this real</div>
     <h2>What I would need from <span class="em">you</span>.</h2>
