@@ -122,8 +122,9 @@ li b{color:var(--ink)}
     <h2>Days 1 to 30</h2>
     <div class="rule"></div>
     <table>
-      <tr><th>Weeks 1–2</th><td>Interviews with you both, the AEs, three customers and two closed-lost. Funnel baseline from twelve months of HubSpot. HubSpot rebuilt: lifecycle, attribution, deal stages, enforced closed-lost reasons. One pipeline dashboard. Plus the cheap fixes: render the 36 FAQ answers server-side, fix the footer nav, put the 97% retention and $20B GMV on the homepage</td></tr>
+      <tr><th>Weeks 1–2</th><td>Interviews with you both, the AEs, three customers and two closed-lost. Funnel baseline from the last six months of HubSpot. <b>Not a HubSpot rebuild</b>, because your lifecycle, deal stages and closed-lost reasons are already running and I am not going to touch them. Marketing dashboards only, and the attribution reporting waits until the channels have run long enough to attribute anything. Plus the cheap fixes: render the 36 FAQ answers server-side, fix the footer nav, put the 97% retention and $20B GMV on the homepage</td></tr>
       <tr><th>Weeks 3–4</th><td>TAM sized, two scored lists in Clay. Domains and inboxes warming. Five sequences written. Contribution margin calculator live. First two comparison pages</td></tr>
+      <tr><th>Tracking, week one</th><td>Live today: GTM, GA4, the Meta pixel, the TikTok pixel and HubSpot. <b>Missing and blocking the plan: the LinkedIn Insight Tag</b>, which matters because the paid plan is LinkedIn-first and retargeting needs two to four weeks of audience before campaign three can run. Also missing: the Google Ads conversion tag, and any website visitor identification, which is the largest single input to warm outbound. Install in week one, report later.</td></tr>
       <tr><th>What goes live</th><td><b>Nothing outbound.</b> Domain warmup takes three weeks and cannot be compressed. Sending early burns the domains and the cost lands in month four</td></tr>
       <tr><th>What I will know<br>that I do not now</th><td>Real NRR and the current monthly logo rate. Demo to close by segment. Where deals actually die. Whether this is a lead problem or a conversion problem, which decides where month two goes</td></tr>
     </table>
@@ -266,7 +267,7 @@ li b{color:var(--ink)}
 
   <!-- 8 OUTBOUND -->
   <section class="slide">
-    <div class="kick">Channel 1 · 40% of pipeline · ~$12k/quarter tooling · by trigger, never by persona</div>
+    <div class="kick">Channel 1 · 40% of pipeline · ~$4k/quarter tooling · warm first, cold last, never by persona</div>
     <h2>Outbound</h2>
     <div class="rule"></div>
     <table>
@@ -429,6 +430,40 @@ li b{color:var(--ink)}
       <tr><td>Produced with</td><td>Figma for statics from two locked templates. Descript for pulling cuts out of the Finance Operators episodes. CapCut for captions and aspect-ratio versions. Claude for copy variants against the hook bank. No agency, no retainer</td></tr>
       <tr><td>Volume and testing</td><td>About 30 assets across the first 60 days: six hooks by three formats, plus variants on whatever wins. One variable at a time, two-week windows, killed below threshold rather than nursed. Creative refresh every three weeks before fatigue, not after it</td></tr>
       <tr><td>What each is measured on</td><td>Campaign one on cost per engagement and pool size, never CPL. Everything else on cost per qualified meeting, target under $600. A lead that never becomes a meeting is not counted</td></tr>
+    </table>
+  </section>
+
+
+  <!-- 15 APX OUTBOUND -->
+  <section class="slide">
+    <div class="kick">Appendix · Outbound in detail</div>
+    <h2>Outbound, warm first</h2>
+    <div class="rule"></div>
+    <div class="note warn"><b>Cold-first would fail here, and the benchmarks say so.</b> Average B2B cold reply is now 1.4%, down from 3.5% in 2018, and SaaS sits at the bottom of every industry table at under 2%. Positive replies land at 0.3% to 0.6%. Warm outbound, meaning anyone with a prior touchpoint, runs 15% to 22%, and LinkedIn after three or more touches reaches 30% to 40%. With a 14,588-company market, a cold blitz burns the list for a 0.4% return. So the lanes are sized in that order.</div>
+    <table>
+      <tr><th>Lane</th><th>Who is in it</th><th>Volume / quarter</th><th>Expected reply</th><th>Meetings</th></tr>
+      <tr><td><b>1 · Warm</b><div class="sub">the whole point</div></td><td>Newsletter subscribers matching ICP (~720 of the 6k). Drew&rsquo;s LinkedIn post engagers, scraped weekly. Identified website visitors. Benchmark-report downloaders from paid. Podcast guests and their networks. Customers&rsquo; referrals</td><td>~1,200</td><td>15–20%</td><td><b>~70</b></td></tr>
+      <tr><td><b>2 · Triggered</b></td><td>The six signals, but never sent cold: a LinkedIn view and a comment land first, so the email is the third touch and not the first</td><td>~1,800</td><td>5–8%</td><td><b>~35</b></td></tr>
+      <tr><td><b>3 · Cold</b><div class="sub">deliberately small</div></td><td>Only the two sharpest triggers, a raise inside 90 days or a controller hire. Hand-checked, never bulk</td><td>~600</td><td>1.5–2%</td><td><b>~5</b></td></tr>
+    </table>
+    <table>
+      <tr><th>Stack and cost</th><th></th><th>$/mo</th></tr>
+      <tr><td>Clay</td><td>Orchestration, enrichment, the 12-signal score. Everything routes through it</td><td>~$350</td></tr>
+      <tr><td>Apollo</td><td>Contact data and the base company universe</td><td>~$150</td></tr>
+      <tr><td>Smartlead</td><td>Cold and triggered sending, inbox rotation, warmup</td><td>~$100</td></tr>
+      <tr><td>HeyReach</td><td>LinkedIn sequencing across multiple seats, which is what makes lane 2 work</td><td>~$150</td></tr>
+      <tr><td>RB2B or Vector</td><td>Person-level website visitor identification. <b>Not installed today.</b> This is the single biggest input to lane 1 and it is currently switched off</td><td>~$300</td></tr>
+      <tr><td>MillionVerifier</td><td>Verification before every send. Non-negotiable for deliverability</td><td>~$50</td></tr>
+      <tr><td>Domains and inboxes</td><td>Five to six domains, 25 to 30 inboxes, three-week warmup, rotating</td><td>~$250</td></tr>
+      <tr><td>n8n</td><td>Self-hosted. Seven signal scrapers running weekly</td><td>~$20</td></tr>
+      <tr><td><b>Total</b></td><td>About $4k a quarter, well under the $12k budgeted. The saving goes to paid</td><td><b>~$1,370</b></td></tr>
+    </table>
+    <table>
+      <tr><th>How we actually send</th><th></th></tr>
+      <tr><td>Whose accounts</td><td>Drew&rsquo;s LinkedIn carries lane 1, because the warmth is his and a founder reply rate is not reproducible by anyone else. Mine carries lane 2. No fake profiles, no burner accounts, and no sending as someone who does not exist</td></tr>
+      <tr><td>AI, and where it stops</td><td>AI researches and builds the variables. It does not write the body. The 1.4% number above is what AI-written cold email produced at scale, and buyers now pattern-match it instantly. Lane 1 messages reference the actual touchpoint: the post they commented on, the report they opened, the page they read</td></tr>
+      <tr><td>Shape of a sequence</td><td>Four steps over twelve days. Plain text, no images, no tracking pixels, no calendar link before a reply. Two emails and two LinkedIn touches, and the email never arrives first</td></tr>
+      <tr><td>The kill rule</td><td>Each lane is judged on its own benchmark, not a blended average. If lane 3 lands under 1% positive by week ten it gets cut and the budget moves to lane 1, where the ceiling is reach rather than response</td></tr>
     </table>
   </section>
 
